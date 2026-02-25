@@ -689,7 +689,7 @@ class Diff2I2P(nn.Module):
 
 
 def create_model(cfg):
-    model = MATR2D3D(cfg)
+    model = Diff2I2P(cfg)
     return model
 
 

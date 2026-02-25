@@ -1,0 +1,690 @@
+[33mcommit 8ec1c52a9057e311b2b6d650ee511eb0b7fb69cf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: mujc2021 <mujuncheng02@gmail.com>
+Date:   Thu Feb 26 01:28:56 2026 +0800
+
+    first commit
+
+ ckpts.zip | Bin [31m231318489[m -> [32m0[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit aea65676522326dcb7b17f7a87a7721ddbac6557[m
+Author: mujc2021 <mujuncheng02@gmail.com>
+Date:   Thu Feb 26 01:28:30 2026 +0800
+
+    first commit
+
+ ckpts.zip                           | Bin [31m0[m -> [32m231318489[m bytes
+ experiments/rgbd_scenes_v2/model.py |   2 [32m+[m[31m-[m
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit dd007be2cd04d0b3c7628c22bff7780a902e5145[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: mujc2021 <mujuncheng02@gmail.com>
+Date:   Thu Feb 26 00:51:29 2026 +0800
+
+    first commit
+
+ vision3d/requirements.txt | 28 [31m----------------------------[m
+ 1 file changed, 28 deletions(-)
+
+[33mcommit 53269cf6f4a44be14ca9a2cc2af68f3830a840e2[m
+Author: mujc2021 <mujuncheng02@gmail.com>
+Date:   Thu Feb 26 00:35:51 2026 +0800
+
+    first commit
+
+ README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 7e4fc6173c596405d9d7b24c6e21e55fd990c7e4[m
+Author: mujc21 <2751631089@qq.com>
+Date:   Thu Feb 26 00:25:32 2026 +0800
+
+    first commit
+
+ vision3d                                           |     1 [31m-[m
+ vision3d/.flake8                                   |     3 [32m+[m
+ vision3d/LICENSE                                   |    21 [32m+[m
+ vision3d/README.md                                 |    59 [32m+[m
+ vision3d/pyproject.toml                            |     7 [32m+[m
+ vision3d/requirements.txt                          |    28 [32m+[m
+ vision3d/setup.py                                  |    48 [32m+[m
+ vision3d/vision3d/__init__.py                      |     0
+ vision3d/vision3d/array_ops/__init__.py            |    87 [32m+[m
+ vision3d/vision3d/array_ops/ball_query.py          |    10 [32m+[m
+ vision3d/vision3d/array_ops/deformation.py         |   490 [32m+[m
+ vision3d/vision3d/array_ops/depth_image.py         |   159 [32m+[m
+ .../vision3d/array_ops/furthest_point_sample.py    |    66 [32m+[m
+ vision3d/vision3d/array_ops/graph_pyramid.py       |    70 [32m+[m
+ vision3d/vision3d/array_ops/grid_reduce.py         |    80 [32m+[m
+ vision3d/vision3d/array_ops/grid_subsample.py      |    22 [32m+[m
+ vision3d/vision3d/array_ops/keypoint_utils.py      |    81 [32m+[m
+ vision3d/vision3d/array_ops/knn.py                 |    16 [32m+[m
+ vision3d/vision3d/array_ops/knn_interpolate.py     |    22 [32m+[m
+ vision3d/vision3d/array_ops/metrics.py             |   175 [32m+[m
+ vision3d/vision3d/array_ops/mutual_select.py       |    35 [32m+[m
+ vision3d/vision3d/array_ops/point_cloud_utils.py   |   261 [32m+[m
+ vision3d/vision3d/array_ops/procrustes.py          |    52 [32m+[m
+ vision3d/vision3d/array_ops/radius_nms.py          |    23 [32m+[m
+ vision3d/vision3d/array_ops/radius_search.py       |    27 [32m+[m
+ vision3d/vision3d/array_ops/ray_utils.py           |    80 [32m+[m
+ vision3d/vision3d/array_ops/registration_utils.py  |   225 [32m+[m
+ vision3d/vision3d/array_ops/se3.py                 |    76 [32m+[m
+ vision3d/vision3d/array_ops/so3.py                 |   118 [32m+[m
+ vision3d/vision3d/csrc/.clang-format               |     5 [32m+[m
+ vision3d/vision3d/csrc/common/cuda_helper.h        |    29 [32m+[m
+ vision3d/vision3d/csrc/common/numpy_helper.h       |     8 [32m+[m
+ vision3d/vision3d/csrc/common/torch_helper.h       |    27 [32m+[m
+ vision3d/vision3d/csrc/cpu/cloud/cloud.cpp         |    42 [32m+[m
+ vision3d/vision3d/csrc/cpu/cloud/cloud.h           |   126 [32m+[m
+ .../cpu/deformation_graph/deformation_graph.cpp    |   267 [32m+[m
+ .../csrc/cpu/deformation_graph/deformation_graph.h |    38 [32m+[m
+ .../vision3d/csrc/cpu/graph_proc/graph_proc.cpp    |   876 [32m+[m
+ vision3d/vision3d/csrc/cpu/graph_proc/graph_proc.h |   107 [32m+[m
+ .../csrc/cpu/grid_subsampling/grid_subsampling.cpp |    77 [32m+[m
+ .../csrc/cpu/grid_subsampling/grid_subsampling.h   |    34 [32m+[m
+ .../csrc/cpu/node_sampling/node_sampling.cpp       |    80 [32m+[m
+ .../csrc/cpu/node_sampling/node_sampling.h         |    18 [32m+[m
+ .../csrc/cpu/radius_neighbors/radius_neighbors.cpp |    95 [32m+[m
+ .../csrc/cpu/radius_neighbors/radius_neighbors.h   |    25 [32m+[m
+ vision3d/vision3d/csrc/cpu/voxel/voxel.cpp         |    44 [32m+[m
+ vision3d/vision3d/csrc/cpu/voxel/voxel.h           |    46 [32m+[m
+ .../vision3d/csrc/cuda/ball_query/ball_query.cpp   |    14 [32m+[m
+ .../vision3d/csrc/cuda/ball_query/ball_query.h     |    24 [32m+[m
+ .../csrc/cuda/ball_query/ball_query_cuda.cu        |    41 [32m+[m
+ .../csrc/cuda/ball_query/ball_query_cuda.cuh       |    59 [32m+[m
+ .../furthest_point_sample.cpp                      |    10 [32m+[m
+ .../furthest_point_sample/furthest_point_sample.h  |    15 [32m+[m
+ .../furthest_point_sample_cuda.cu                  |    75 [32m+[m
+ .../furthest_point_sample_cuda.cuh                 |    92 [32m+[m
+ vision3d/vision3d/csrc/cuda/gather/gather.cpp      |    14 [32m+[m
+ vision3d/vision3d/csrc/cuda/gather/gather.h        |    20 [32m+[m
+ vision3d/vision3d/csrc/cuda/gather/gather_cuda.cu  |    67 [32m+[m
+ vision3d/vision3d/csrc/cuda/gather/gather_cuda.cuh |    63 [32m+[m
+ .../csrc/cuda/group_gather/group_gather.cpp        |    14 [32m+[m
+ .../vision3d/csrc/cuda/group_gather/group_gather.h |    20 [32m+[m
+ .../csrc/cuda/group_gather/group_gather_cuda.cu    |    71 [32m+[m
+ .../csrc/cuda/group_gather/group_gather_cuda.cuh   |    63 [32m+[m
+ .../vision3d/csrc/cuda/knn_points/knn_points.cpp   |    14 [32m+[m
+ .../vision3d/csrc/cuda/knn_points/knn_points.h     |    26 [32m+[m
+ .../csrc/cuda/knn_points/knn_points_cuda.cu        |    42 [32m+[m
+ .../csrc/cuda/knn_points/knn_points_cuda.cuh       |    97 [32m+[m
+ .../cuda/three_interpolate/three_interpolate.cpp   |    19 [32m+[m
+ .../cuda/three_interpolate/three_interpolate.h     |    30 [32m+[m
+ .../three_interpolate/three_interpolate_cuda.cu    |    76 [32m+[m
+ .../three_interpolate/three_interpolate_cuda.cuh   |    87 [32m+[m
+ vision3d/vision3d/csrc/cuda/three_nn/three_nn.cpp  |    10 [32m+[m
+ vision3d/vision3d/csrc/cuda/three_nn/three_nn.h    |    18 [32m+[m
+ .../vision3d/csrc/cuda/three_nn/three_nn_cuda.cu   |    37 [32m+[m
+ .../vision3d/csrc/cuda/three_nn/three_nn_cuda.cuh  |    79 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/Cholesky   |    46 [32m+[m
+ .../csrc/external/eigen3/Eigen/CholmodSupport      |    48 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/Core  |   537 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/Dense |     7 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/Eigen |     2 [32m+[m
+ .../csrc/external/eigen3/Eigen/Eigenvalues         |    61 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/Geometry   |    62 [32m+[m
+ .../csrc/external/eigen3/Eigen/Householder         |    30 [32m+[m
+ .../external/eigen3/Eigen/IterativeLinearSolvers   |    48 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/Jacobi     |    33 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/LU    |    50 [32m+[m
+ .../csrc/external/eigen3/Eigen/MetisSupport        |    35 [32m+[m
+ .../csrc/external/eigen3/Eigen/OrderingMethods     |    73 [32m+[m
+ .../csrc/external/eigen3/Eigen/PaStiXSupport       |    48 [32m+[m
+ .../csrc/external/eigen3/Eigen/PardisoSupport      |    35 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/QR    |    51 [32m+[m
+ .../csrc/external/eigen3/Eigen/QtAlignedMalloc     |    40 [32m+[m
+ .../csrc/external/eigen3/Eigen/SPQRSupport         |    34 [32m+[m
+ vision3d/vision3d/csrc/external/eigen3/Eigen/SVD   |    51 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/Sparse     |    36 [32m+[m
+ .../csrc/external/eigen3/Eigen/SparseCholesky      |    45 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/SparseCore |    69 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/SparseLU   |    46 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/SparseQR   |    37 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/StdDeque   |    27 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/StdList    |    26 [32m+[m
+ .../vision3d/csrc/external/eigen3/Eigen/StdVector  |    27 [32m+[m
+ .../csrc/external/eigen3/Eigen/SuperLUSupport      |    64 [32m+[m
+ .../csrc/external/eigen3/Eigen/UmfPackSupport      |    40 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Cholesky/LDLT.h |   673 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Cholesky/LLT.h  |   542 [32m+[m
+ .../eigen3/Eigen/src/Cholesky/LLT_LAPACKE.h        |    99 [32m+[m
+ .../Eigen/src/CholmodSupport/CholmodSupport.h      |   639 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Array.h    |   329 [32m+[m
+ .../external/eigen3/Eigen/src/Core/ArrayBase.h     |   226 [32m+[m
+ .../external/eigen3/Eigen/src/Core/ArrayWrapper.h  |   209 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Assign.h   |    90 [32m+[m
+ .../eigen3/Eigen/src/Core/AssignEvaluator.h        |   935 [32m++[m
+ .../external/eigen3/Eigen/src/Core/Assign_MKL.h    |   178 [32m+[m
+ .../external/eigen3/Eigen/src/Core/BandMatrix.h    |   353 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Block.h    |   452 [32m+[m
+ .../external/eigen3/Eigen/src/Core/BooleanRedux.h  |   164 [32m+[m
+ .../eigen3/Eigen/src/Core/CommaInitializer.h       |   160 [32m+[m
+ .../eigen3/Eigen/src/Core/ConditionEstimator.h     |   175 [32m+[m
+ .../eigen3/Eigen/src/Core/CoreEvaluators.h         |  1688 [32m++[m
+ .../external/eigen3/Eigen/src/Core/CoreIterators.h |   127 [32m+[m
+ .../external/eigen3/Eigen/src/Core/CwiseBinaryOp.h |   184 [32m+[m
+ .../eigen3/Eigen/src/Core/CwiseNullaryOp.h         |   866 [32m+[m
+ .../eigen3/Eigen/src/Core/CwiseTernaryOp.h         |   197 [32m+[m
+ .../external/eigen3/Eigen/src/Core/CwiseUnaryOp.h  |   103 [32m+[m
+ .../eigen3/Eigen/src/Core/CwiseUnaryView.h         |   130 [32m+[m
+ .../external/eigen3/Eigen/src/Core/DenseBase.h     |   612 [32m+[m
+ .../eigen3/Eigen/src/Core/DenseCoeffsBase.h        |   681 [32m+[m
+ .../external/eigen3/Eigen/src/Core/DenseStorage.h  |   570 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Diagonal.h |   260 [32m+[m
+ .../eigen3/Eigen/src/Core/DiagonalMatrix.h         |   343 [32m+[m
+ .../eigen3/Eigen/src/Core/DiagonalProduct.h        |    28 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Dot.h      |   318 [32m+[m
+ .../external/eigen3/Eigen/src/Core/EigenBase.h     |   159 [32m+[m
+ .../eigen3/Eigen/src/Core/ForceAlignedAccess.h     |   146 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Fuzzy.h    |   155 [32m+[m
+ .../eigen3/Eigen/src/Core/GeneralProduct.h         |   455 [32m+[m
+ .../eigen3/Eigen/src/Core/GenericPacketMath.h      |   593 [32m+[m
+ .../eigen3/Eigen/src/Core/GlobalFunctions.h        |   187 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/IO.h       |   225 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Inverse.h  |   118 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Map.h      |   171 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/MapBase.h  |   308 [32m+[m
+ .../external/eigen3/Eigen/src/Core/MathFunctions.h |  1415 [32m++[m
+ .../eigen3/Eigen/src/Core/MathFunctionsImpl.h      |   101 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Matrix.h   |   459 [32m+[m
+ .../external/eigen3/Eigen/src/Core/MatrixBase.h    |   530 [32m+[m
+ .../external/eigen3/Eigen/src/Core/NestByValue.h   |   110 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/NoAlias.h  |   108 [32m+[m
+ .../external/eigen3/Eigen/src/Core/NumTraits.h     |   248 [32m+[m
+ .../eigen3/Eigen/src/Core/PermutationMatrix.h      |   633 [32m+[m
+ .../eigen3/Eigen/src/Core/PlainObjectBase.h        |  1035 [32m++[m
+ .../csrc/external/eigen3/Eigen/src/Core/Product.h  |   186 [32m+[m
+ .../eigen3/Eigen/src/Core/ProductEvaluators.h      |  1112 [32m++[m
+ .../csrc/external/eigen3/Eigen/src/Core/Random.h   |   182 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Redux.h    |   505 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Ref.h      |   283 [32m+[m
+ .../external/eigen3/Eigen/src/Core/Replicate.h     |   142 [32m+[m
+ .../external/eigen3/Eigen/src/Core/ReturnByValue.h |   117 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Reverse.h  |   211 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Select.h   |   162 [32m+[m
+ .../eigen3/Eigen/src/Core/SelfAdjointView.h        |   352 [32m+[m
+ .../eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h      |    47 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Solve.h    |   188 [32m+[m
+ .../eigen3/Eigen/src/Core/SolveTriangular.h        |   235 [32m+[m
+ .../external/eigen3/Eigen/src/Core/SolverBase.h    |   130 [32m+[m
+ .../external/eigen3/Eigen/src/Core/StableNorm.h    |   221 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Stride.h   |   111 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Swap.h     |    67 [32m+[m
+ .../external/eigen3/Eigen/src/Core/Transpose.h     |   405 [32m+[m
+ .../eigen3/Eigen/src/Core/Transpositions.h         |   407 [32m+[m
+ .../eigen3/Eigen/src/Core/TriangularMatrix.h       |   985 [32m++[m
+ .../external/eigen3/Eigen/src/Core/VectorBlock.h   |    96 [32m+[m
+ .../external/eigen3/Eigen/src/Core/VectorwiseOp.h  |   695 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Core/Visitor.h  |   273 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/AVX/Complex.h       |   451 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h |   439 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/AVX/PacketMath.h    |   637 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h   |    51 [32m+[m
+ .../Eigen/src/Core/arch/AVX512/MathFunctions.h     |   391 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/AVX512/PacketMath.h |  1316 [32m++[m
+ .../eigen3/Eigen/src/Core/arch/AltiVec/Complex.h   |   430 [32m+[m
+ .../Eigen/src/Core/arch/AltiVec/MathFunctions.h    |   322 [32m+[m
+ .../Eigen/src/Core/arch/AltiVec/PacketMath.h       |  1061 [32m++[m
+ .../eigen3/Eigen/src/Core/arch/CUDA/Complex.h      |   103 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/CUDA/Half.h         |   674 [32m+[m
+ .../Eigen/src/Core/arch/CUDA/MathFunctions.h       |    91 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h   |   333 [32m+[m
+ .../Eigen/src/Core/arch/CUDA/PacketMathHalf.h      |  1124 [32m++[m
+ .../eigen3/Eigen/src/Core/arch/CUDA/TypeCasting.h  |   212 [32m+[m
+ .../Eigen/src/Core/arch/Default/ConjHelper.h       |    29 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/Default/Settings.h  |    49 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/NEON/Complex.h      |   490 [32m+[m
+ .../Eigen/src/Core/arch/NEON/MathFunctions.h       |    91 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/NEON/PacketMath.h   |   760 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/SSE/Complex.h       |   471 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h |   562 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/SSE/PacketMath.h    |   895 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h   |    77 [32m+[m
+ .../eigen3/Eigen/src/Core/arch/ZVector/Complex.h   |   397 [32m+[m
+ .../Eigen/src/Core/arch/ZVector/MathFunctions.h    |   137 [32m+[m
+ .../Eigen/src/Core/arch/ZVector/PacketMath.h       |   945 [32m++[m
+ .../Eigen/src/Core/functors/AssignmentFunctors.h   |   168 [32m+[m
+ .../Eigen/src/Core/functors/BinaryFunctors.h       |   475 [32m+[m
+ .../Eigen/src/Core/functors/NullaryFunctors.h      |   188 [32m+[m
+ .../eigen3/Eigen/src/Core/functors/StlFunctors.h   |   136 [32m+[m
+ .../Eigen/src/Core/functors/TernaryFunctors.h      |    25 [32m+[m
+ .../eigen3/Eigen/src/Core/functors/UnaryFunctors.h |   792 [32m+[m
+ .../src/Core/products/GeneralBlockPanelKernel.h    |  2156 [32m+++[m
+ .../Eigen/src/Core/products/GeneralMatrixMatrix.h  |   492 [32m+[m
+ .../Core/products/GeneralMatrixMatrixTriangular.h  |   311 [32m+[m
+ .../products/GeneralMatrixMatrixTriangular_BLAS.h  |   145 [32m+[m
+ .../src/Core/products/GeneralMatrixMatrix_BLAS.h   |   122 [32m+[m
+ .../Eigen/src/Core/products/GeneralMatrixVector.h  |   619 [32m+[m
+ .../src/Core/products/GeneralMatrixVector_BLAS.h   |   136 [32m+[m
+ .../eigen3/Eigen/src/Core/products/Parallelizer.h  |   163 [32m+[m
+ .../src/Core/products/SelfadjointMatrixMatrix.h    |   521 [32m+[m
+ .../Core/products/SelfadjointMatrixMatrix_BLAS.h   |   287 [32m+[m
+ .../src/Core/products/SelfadjointMatrixVector.h    |   260 [32m+[m
+ .../Core/products/SelfadjointMatrixVector_BLAS.h   |   118 [32m+[m
+ .../Eigen/src/Core/products/SelfadjointProduct.h   |   133 [32m+[m
+ .../src/Core/products/SelfadjointRank2Update.h     |    93 [32m+[m
+ .../src/Core/products/TriangularMatrixMatrix.h     |   466 [32m+[m
+ .../Core/products/TriangularMatrixMatrix_BLAS.h    |   315 [32m+[m
+ .../src/Core/products/TriangularMatrixVector.h     |   350 [32m+[m
+ .../Core/products/TriangularMatrixVector_BLAS.h    |   255 [32m+[m
+ .../src/Core/products/TriangularSolverMatrix.h     |   335 [32m+[m
+ .../Core/products/TriangularSolverMatrix_BLAS.h    |   163 [32m+[m
+ .../src/Core/products/TriangularSolverVector.h     |   145 [32m+[m
+ .../external/eigen3/Eigen/src/Core/util/BlasUtil.h |   398 [32m+[m
+ .../eigen3/Eigen/src/Core/util/Constants.h         |   547 [32m+[m
+ .../Eigen/src/Core/util/DisableStupidWarnings.h    |    83 [32m+[m
+ .../Eigen/src/Core/util/ForwardDeclarations.h      |   302 [32m+[m
+ .../eigen3/Eigen/src/Core/util/MKL_support.h       |   130 [32m+[m
+ .../external/eigen3/Eigen/src/Core/util/Macros.h   |  1038 [32m++[m
+ .../external/eigen3/Eigen/src/Core/util/Memory.h   |   993 [32m++[m
+ .../external/eigen3/Eigen/src/Core/util/Meta.h     |   534 [32m+[m
+ .../external/eigen3/Eigen/src/Core/util/NonMPL2.h  |     3 [32m+[m
+ .../Eigen/src/Core/util/ReenableStupidWarnings.h   |    27 [32m+[m
+ .../eigen3/Eigen/src/Core/util/StaticAssert.h      |   218 [32m+[m
+ .../eigen3/Eigen/src/Core/util/XprHelper.h         |   824 [32m+[m
+ .../Eigen/src/Eigenvalues/ComplexEigenSolver.h     |   346 [32m+[m
+ .../eigen3/Eigen/src/Eigenvalues/ComplexSchur.h    |   459 [32m+[m
+ .../Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h   |    91 [32m+[m
+ .../eigen3/Eigen/src/Eigenvalues/EigenSolver.h     |   622 [32m+[m
+ .../Eigen/src/Eigenvalues/GeneralizedEigenSolver.h |   418 [32m+[m
+ .../GeneralizedSelfAdjointEigenSolver.h            |   226 [32m+[m
+ .../src/Eigenvalues/HessenbergDecomposition.h      |   374 [32m+[m
+ .../Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h  |   158 [32m+[m
+ .../external/eigen3/Eigen/src/Eigenvalues/RealQZ.h |   654 [32m+[m
+ .../eigen3/Eigen/src/Eigenvalues/RealSchur.h       |   546 [32m+[m
+ .../Eigen/src/Eigenvalues/RealSchur_LAPACKE.h      |    77 [32m+[m
+ .../Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h |   870 [32m+[m
+ .../Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h   |    87 [32m+[m
+ .../Eigen/src/Eigenvalues/Tridiagonalization.h     |   556 [32m+[m
+ .../eigen3/Eigen/src/Geometry/AlignedBox.h         |   392 [32m+[m
+ .../external/eigen3/Eigen/src/Geometry/AngleAxis.h |   247 [32m+[m
+ .../eigen3/Eigen/src/Geometry/EulerAngles.h        |   114 [32m+[m
+ .../eigen3/Eigen/src/Geometry/Homogeneous.h        |   497 [32m+[m
+ .../eigen3/Eigen/src/Geometry/Hyperplane.h         |   282 [32m+[m
+ .../eigen3/Eigen/src/Geometry/OrthoMethods.h       |   234 [32m+[m
+ .../eigen3/Eigen/src/Geometry/ParametrizedLine.h   |   195 [32m+[m
+ .../eigen3/Eigen/src/Geometry/Quaternion.h         |   817 [32m+[m
+ .../eigen3/Eigen/src/Geometry/Rotation2D.h         |   199 [32m+[m
+ .../eigen3/Eigen/src/Geometry/RotationBase.h       |   206 [32m+[m
+ .../external/eigen3/Eigen/src/Geometry/Scaling.h   |   170 [32m+[m
+ .../external/eigen3/Eigen/src/Geometry/Transform.h |  1542 [32m++[m
+ .../eigen3/Eigen/src/Geometry/Translation.h        |   202 [32m+[m
+ .../external/eigen3/Eigen/src/Geometry/Umeyama.h   |   166 [32m+[m
+ .../eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h  |   161 [32m+[m
+ .../Eigen/src/Householder/BlockHouseholder.h       |   103 [32m+[m
+ .../eigen3/Eigen/src/Householder/Householder.h     |   172 [32m+[m
+ .../Eigen/src/Householder/HouseholderSequence.h    |   470 [32m+[m
+ .../IterativeLinearSolvers/BasicPreconditioners.h  |   226 [32m+[m
+ .../Eigen/src/IterativeLinearSolvers/BiCGSTAB.h    |   228 [32m+[m
+ .../src/IterativeLinearSolvers/ConjugateGradient.h |   246 [32m+[m
+ .../IterativeLinearSolvers/IncompleteCholesky.h    |   400 [32m+[m
+ .../src/IterativeLinearSolvers/IncompleteLUT.h     |   462 [32m+[m
+ .../IterativeLinearSolvers/IterativeSolverBase.h   |   394 [32m+[m
+ .../LeastSquareConjugateGradient.h                 |   216 [32m+[m
+ .../src/IterativeLinearSolvers/SolveWithGuess.h    |   115 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/Jacobi/Jacobi.h |   462 [32m+[m
+ .../external/eigen3/Eigen/src/LU/Determinant.h     |   101 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/LU/FullPivLU.h  |   891 [32m+[m
+ .../external/eigen3/Eigen/src/LU/InverseImpl.h     |   415 [32m+[m
+ .../external/eigen3/Eigen/src/LU/PartialPivLU.h    |   611 [32m+[m
+ .../eigen3/Eigen/src/LU/PartialPivLU_LAPACKE.h     |    83 [32m+[m
+ .../eigen3/Eigen/src/LU/arch/Inverse_SSE.h         |   338 [32m+[m
+ .../eigen3/Eigen/src/MetisSupport/MetisSupport.h   |   137 [32m+[m
+ .../eigen3/Eigen/src/OrderingMethods/Amd.h         |   445 [32m+[m
+ .../Eigen/src/OrderingMethods/Eigen_Colamd.h       |  1843 [32m+++[m
+ .../eigen3/Eigen/src/OrderingMethods/Ordering.h    |   157 [32m+[m
+ .../eigen3/Eigen/src/PaStiXSupport/PaStiXSupport.h |   678 [32m+[m
+ .../Eigen/src/PardisoSupport/PardisoSupport.h      |   543 [32m+[m
+ .../eigen3/Eigen/src/QR/ColPivHouseholderQR.h      |   653 [32m+[m
+ .../Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h     |    97 [32m+[m
+ .../Eigen/src/QR/CompleteOrthogonalDecomposition.h |   562 [32m+[m
+ .../eigen3/Eigen/src/QR/FullPivHouseholderQR.h     |   676 [32m+[m
+ .../external/eigen3/Eigen/src/QR/HouseholderQR.h   |   409 [32m+[m
+ .../eigen3/Eigen/src/QR/HouseholderQR_LAPACKE.h    |    68 [32m+[m
+ .../Eigen/src/SPQRSupport/SuiteSparseQRSupport.h   |   313 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/SVD/BDCSVD.h    |  1246 [32m++[m
+ .../csrc/external/eigen3/Eigen/src/SVD/JacobiSVD.h |   804 [32m+[m
+ .../eigen3/Eigen/src/SVD/JacobiSVD_LAPACKE.h       |    91 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/SVD/SVDBase.h   |   315 [32m+[m
+ .../eigen3/Eigen/src/SVD/UpperBidiagonalization.h  |   414 [32m+[m
+ .../Eigen/src/SparseCholesky/SimplicialCholesky.h  |   689 [32m+[m
+ .../src/SparseCholesky/SimplicialCholesky_impl.h   |   199 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/AmbiVector.h       |   378 [32m+[m
+ .../Eigen/src/SparseCore/CompressedStorage.h       |   258 [32m+[m
+ .../SparseCore/ConservativeSparseSparseProduct.h   |   352 [32m+[m
+ .../Eigen/src/SparseCore/MappedSparseMatrix.h      |    67 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseAssign.h     |   216 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseBlock.h      |   603 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseColEtree.h   |   206 [32m+[m
+ .../Eigen/src/SparseCore/SparseCompressedBase.h    |   341 [32m+[m
+ .../Eigen/src/SparseCore/SparseCwiseBinaryOp.h     |   726 [32m+[m
+ .../Eigen/src/SparseCore/SparseCwiseUnaryOp.h      |   148 [32m+[m
+ .../Eigen/src/SparseCore/SparseDenseProduct.h      |   320 [32m+[m
+ .../Eigen/src/SparseCore/SparseDiagonalProduct.h   |   138 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseDot.h        |    98 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseFuzzy.h      |    29 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseMap.h        |   305 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseMatrix.h     |  1403 [32m++[m
+ .../eigen3/Eigen/src/SparseCore/SparseMatrixBase.h |   405 [32m+[m
+ .../Eigen/src/SparseCore/SparsePermutation.h       |   178 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseProduct.h    |   169 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseRedux.h      |    49 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseRef.h        |   397 [32m+[m
+ .../Eigen/src/SparseCore/SparseSelfAdjointView.h   |   656 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseSolverBase.h |   124 [32m+[m
+ .../SparseCore/SparseSparseProductWithPruning.h    |   198 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseTranspose.h  |    92 [32m+[m
+ .../Eigen/src/SparseCore/SparseTriangularView.h    |   189 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseUtil.h       |   178 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseVector.h     |   478 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/SparseView.h       |   253 [32m+[m
+ .../eigen3/Eigen/src/SparseCore/TriangularSolver.h |   315 [32m+[m
+ .../external/eigen3/Eigen/src/SparseLU/SparseLU.h  |   773 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLUImpl.h       |    66 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_Memory.h    |   226 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_Structs.h   |   110 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h |   301 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_Utils.h     |    80 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_column_bmod.h      |   181 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_column_dfs.h       |   179 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_copy_to_ucol.h     |   107 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_gemm_kernel.h      |   280 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_heap_relax_snode.h |   126 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_kernel_bmod.h      |   130 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_panel_bmod.h       |   223 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h |   258 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h    |   137 [32m+[m
+ .../eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h    |   136 [32m+[m
+ .../Eigen/src/SparseLU/SparseLU_relax_snode.h      |    83 [32m+[m
+ .../external/eigen3/Eigen/src/SparseQR/SparseQR.h  |   745 [32m+[m
+ .../eigen3/Eigen/src/StlSupport/StdDeque.h         |   126 [32m+[m
+ .../external/eigen3/Eigen/src/StlSupport/StdList.h |   106 [32m+[m
+ .../eigen3/Eigen/src/StlSupport/StdVector.h        |   131 [32m+[m
+ .../external/eigen3/Eigen/src/StlSupport/details.h |    84 [32m+[m
+ .../Eigen/src/SuperLUSupport/SuperLUSupport.h      |  1027 [32m++[m
+ .../Eigen/src/UmfPackSupport/UmfPackSupport.h      |   506 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/misc/Image.h    |    82 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/misc/Kernel.h   |    79 [32m+[m
+ .../external/eigen3/Eigen/src/misc/RealSvd2x2.h    |    55 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/misc/blas.h     |   440 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/misc/lapack.h   |   152 [32m+[m
+ .../csrc/external/eigen3/Eigen/src/misc/lapacke.h  | 16291 [32m+++++++++++++++++++[m
+ .../eigen3/Eigen/src/misc/lapacke_mangling.h       |    17 [32m+[m
+ .../eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h |   332 [32m+[m
+ .../eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h  |   552 [32m+[m
+ .../eigen3/Eigen/src/plugins/BlockMethods.h        |  1058 [32m++[m
+ .../Eigen/src/plugins/CommonCwiseBinaryOps.h       |   115 [32m+[m
+ .../eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h |   163 [32m+[m
+ .../Eigen/src/plugins/MatrixCwiseBinaryOps.h       |   152 [32m+[m
+ .../eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h |    85 [32m+[m
+ .../vision3d/csrc/external/nanoflann/nanoflann.hpp |  2043 [32m+++[m
+ vision3d/vision3d/csrc/pybind.cpp                  |   159 [32m+[m
+ vision3d/vision3d/datasets/README.md               |    40 [32m+[m
+ vision3d/vision3d/datasets/__init__.py             |     0
+ .../vision3d/datasets/classification/__init__.py   |     1 [32m+[m
+ .../vision3d/datasets/classification/modelnet40.py |    62 [32m+[m
+ vision3d/vision3d/datasets/completion/__init__.py  |     1 [32m+[m
+ vision3d/vision3d/datasets/completion/modelnet.py  |   125 [32m+[m
+ .../vision3d/datasets/registration/__init__.py     |    11 [32m+[m
+ .../datasets/registration/cape/__init__.py         |     1 [32m+[m
+ .../vision3d/datasets/registration/cape/cape.py    |    79 [32m+[m
+ .../datasets/registration/deepdeform/__init__.py   |     1 [32m+[m
+ .../datasets/registration/deepdeform/deepdeform.py |    66 [32m+[m
+ .../datasets/registration/fourdmatch/__init__.py   |     5 [32m+[m
+ .../datasets/registration/fourdmatch/fourdmatch.py |   155 [32m+[m
+ .../datasets/registration/fourdmatch/utils.py      |    99 [32m+[m
+ .../datasets/registration/kitti/__init__.py        |     1 [32m+[m
+ .../datasets/registration/kitti/odometry_kitti.py  |   161 [32m+[m
+ .../datasets/registration/modelnet/__init__.py     |     1 [32m+[m
+ .../datasets/registration/modelnet/modelnet.py     |   256 [32m+[m
+ .../datasets/registration/redwood/__init__.py      |     1 [32m+[m
+ .../datasets/registration/redwood/redwood.py       |    91 [32m+[m
+ .../datasets/registration/rgbdscenes/__init__.py   |     1 [32m+[m
+ .../datasets/registration/rgbdscenes/rgbdscenes.py |   151 [32m+[m
+ .../datasets/registration/scannet_urr/__init__.py  |     1 [32m+[m
+ .../registration/scannet_urr/scannet_urr.py        |   167 [32m+[m
+ .../datasets/registration/sevenscenes/__init__.py  |     1 [32m+[m
+ .../registration/sevenscenes/sevenscenes_hard.py   |   177 [32m+[m
+ .../datasets/registration/shapenet/__init__.py     |     1 [32m+[m
+ .../datasets/registration/shapenet/shapenet.py     |   202 [32m+[m
+ .../datasets/registration/threedmatch/__init__.py  |    14 [32m+[m
+ .../registration/threedmatch/threedmatch.py        |   209 [32m+[m
+ .../registration/threedmatch/threedmatch_rgb.py    |   253 [32m+[m
+ .../registration/threedmatch/threedmatch_utils.py  |   225 [32m+[m
+ .../registration/threedmatch_urr/__init__.py       |     1 [32m+[m
+ .../threedmatch_urr/threedmatch_urr.py             |   211 [32m+[m
+ .../vision3d/datasets/segmentation/__init__.py     |     5 [32m+[m
+ vision3d/vision3d/datasets/segmentation/s3dis.py   |   267 [32m+[m
+ .../datasets/segmentation/s3dis_voxelized.py       |   293 [32m+[m
+ .../vision3d/datasets/segmentation/shapenetpart.py |    85 [32m+[m
+ vision3d/vision3d/datasets/segmentation/utils.py   |   214 [32m+[m
+ vision3d/vision3d/engine/__init__.py               |     6 [32m+[m
+ vision3d/vision3d/engine/base_tester.py            |   119 [32m+[m
+ vision3d/vision3d/engine/base_trainer.py           |   429 [32m+[m
+ vision3d/vision3d/engine/batch_tester.py           |    70 [32m+[m
+ vision3d/vision3d/engine/checkpoint.py             |   162 [32m+[m
+ vision3d/vision3d/engine/context_manager.py        |    77 [32m+[m
+ vision3d/vision3d/engine/epoch_based_trainer.py    |    95 [32m+[m
+ vision3d/vision3d/engine/iter_based_trainer.py     |   128 [32m+[m
+ vision3d/vision3d/engine/single_tester.py          |    57 [32m+[m
+ vision3d/vision3d/engine/utils.py                  |    21 [32m+[m
+ vision3d/vision3d/layers/__init__.py               |    31 [32m+[m
+ vision3d/vision3d/layers/basic_layers/__init__.py  |    12 [32m+[m
+ vision3d/vision3d/layers/basic_layers/builder.py   |   138 [32m+[m
+ .../vision3d/layers/basic_layers/depthwise_conv.py |    56 [32m+[m
+ .../layers/basic_layers/monte_carlo_dropout.py     |    23 [32m+[m
+ vision3d/vision3d/layers/basic_layers/norm.py      |    65 [32m+[m
+ .../vision3d/layers/basic_layers/separable_conv.py |    76 [32m+[m
+ vision3d/vision3d/layers/basic_layers/utils.py     |     9 [32m+[m
+ vision3d/vision3d/layers/conv_block.py             |   125 [32m+[m
+ vision3d/vision3d/layers/edge_conv.py              |   123 [32m+[m
+ vision3d/vision3d/layers/embedding.py              |   131 [32m+[m
+ vision3d/vision3d/layers/feature_propagate.py      |    54 [32m+[m
+ vision3d/vision3d/layers/kpconv.py                 |   353 [32m+[m
+ vision3d/vision3d/layers/kpconv_utils/__init__.py  |     1 [32m+[m
+ .../kpconv_utils/dispositions/k_015_center_3D.ply  |   Bin [31m0[m -> [32m482[m bytes
+ .../vision3d/layers/kpconv_utils/kernel_points.py  |   455 [32m+[m
+ vision3d/vision3d/layers/nonrigid_icp.py           |   207 [32m+[m
+ vision3d/vision3d/layers/pointnet.py               |    62 [32m+[m
+ vision3d/vision3d/layers/pointnet2.py              |    80 [32m+[m
+ vision3d/vision3d/layers/residual_block.py         |   157 [32m+[m
+ vision3d/vision3d/layers/sinkhorn.py               |   126 [32m+[m
+ vision3d/vision3d/layers/transformer.py            |   301 [32m+[m
+ vision3d/vision3d/layers/unary_block.py            |    30 [32m+[m
+ vision3d/vision3d/layers/vector_neurons.py         |   208 [32m+[m
+ vision3d/vision3d/layers/weighted_procrustes.py    |    23 [32m+[m
+ vision3d/vision3d/layers/xconv.py                  |   151 [32m+[m
+ vision3d/vision3d/loss/__init__.py                 |     9 [32m+[m
+ .../vision3d/loss/as_rigid_as_possible_loss.py     |    43 [32m+[m
+ vision3d/vision3d/loss/chamfer_distance.py         |   129 [32m+[m
+ vision3d/vision3d/loss/circle_loss.py              |   113 [32m+[m
+ vision3d/vision3d/loss/focal_loss.py               |   144 [32m+[m
+ vision3d/vision3d/loss/hardest_contrastive_loss.py |    92 [32m+[m
+ vision3d/vision3d/loss/orthogonal_loss.py          |    37 [32m+[m
+ vision3d/vision3d/loss/smooth_ce_loss.py           |    29 [32m+[m
+ vision3d/vision3d/loss/transformation_loss.py      |    74 [32m+[m
+ vision3d/vision3d/loss/weighted_bce_loss.py        |   108 [32m+[m
+ vision3d/vision3d/metrics/__init__.py              |     3 [32m+[m
+ vision3d/vision3d/metrics/accuracy.py              |    32 [32m+[m
+ vision3d/vision3d/metrics/iou.py                   |    32 [32m+[m
+ vision3d/vision3d/metrics/part_iou.py              |    40 [32m+[m
+ vision3d/vision3d/models/__init__.py               |     0
+ vision3d/vision3d/models/backbone/__init__.py      |     1 [32m+[m
+ vision3d/vision3d/models/backbone/kpconv_fpn.py    |   116 [32m+[m
+ vision3d/vision3d/models/cofinet/__init__.py       |     2 [32m+[m
+ vision3d/vision3d/models/cofinet/node_matching.py  |    58 [32m+[m
+ vision3d/vision3d/models/cofinet/node_proposal.py  |    40 [32m+[m
+ vision3d/vision3d/models/contrib/__init__.py       |     0
+ vision3d/vision3d/models/d3feat/__init__.py        |     0
+ vision3d/vision3d/models/d3feat/detection_score.py |    76 [32m+[m
+ vision3d/vision3d/models/d3feat/loss.py            |   129 [32m+[m
+ vision3d/vision3d/models/fcgf/__init__.py          |     1 [32m+[m
+ vision3d/vision3d/models/fcgf/modules.py           |    78 [32m+[m
+ vision3d/vision3d/models/foldingnet/__init__.py    |     1 [32m+[m
+ vision3d/vision3d/models/foldingnet/foldingnet.py  |    65 [32m+[m
+ .../vision3d/models/geotransformer/__init__.py     |    12 [32m+[m
+ .../geotransformer/adaptive_superpoint_matching.py |    64 [32m+[m
+ .../geometric_structure_embedding.py               |   200 [32m+[m
+ .../models/geotransformer/geometric_transformer.py |   124 [32m+[m
+ .../geotransformer/geometric_transformer_lite.py   |    99 [32m+[m
+ .../geotransformer/local_global_registration.py    |   229 [32m+[m
+ .../local_global_registration_duplicate_removal.py |   248 [32m+[m
+ .../local_global_registration_threshold.py         |   210 [32m+[m
+ .../models/geotransformer/point_matching.py        |   100 [32m+[m
+ .../spatial_consistency_filtering.py               |    24 [32m+[m
+ .../superpoint_matching_global_topk.py             |    83 [32m+[m
+ .../superpoint_matching_mutual_topk.py             |    78 [32m+[m
+ .../models/geotransformer/superpoint_proposal.py   |    64 [32m+[m
+ vision3d/vision3d/models/graph_pyramid/__init__.py |     1 [32m+[m
+ .../models/graph_pyramid/calibrate_neighbors.py    |    70 [32m+[m
+ .../vision3d/models/graph_pyramid/graph_pyramid.py |    63 [32m+[m
+ vision3d/vision3d/models/pat/__init__.py           |     1 [32m+[m
+ vision3d/vision3d/models/pat/functional.py         |    70 [32m+[m
+ vision3d/vision3d/models/pat/modules.py            |   143 [32m+[m
+ .../vision3d/models/point_transformer/__init__.py  |     7 [32m+[m
+ .../vision3d/models/point_transformer/modules.py   |    84 [32m+[m
+ vision3d/vision3d/models/pointnet/__init__.py      |     5 [32m+[m
+ vision3d/vision3d/models/pointnet/modules.py       |    70 [32m+[m
+ vision3d/vision3d/models/pointnet2/__init__.py     |     5 [32m+[m
+ vision3d/vision3d/models/pointnet2/modules.py      |    67 [32m+[m
+ vision3d/vision3d/models/predator/__init__.py      |     3 [32m+[m
+ vision3d/vision3d/models/predator/loss.py          |   180 [32m+[m
+ vision3d/vision3d/models/predator/modules.py       |   158 [32m+[m
+ vision3d/vision3d/models/pri3d/__init__.py         |     1 [32m+[m
+ vision3d/vision3d/models/pri3d/resnet.py           |   206 [32m+[m
+ vision3d/vision3d/models/pri3d/resunet.py          |   262 [32m+[m
+ .../models/siamese_transformer/__init__.py         |     1 [32m+[m
+ .../vanilla_siamese_transformer.py                 |    53 [32m+[m
+ vision3d/vision3d/models/urr/__init__.py           |     3 [32m+[m
+ vision3d/vision3d/models/urr/matching.py           |    73 [32m+[m
+ vision3d/vision3d/models/urr/registration.py       |    55 [32m+[m
+ vision3d/vision3d/models/urr/render.py             |   131 [32m+[m
+ vision3d/vision3d/ops/__init__.py                  |    61 [32m+[m
+ vision3d/vision3d/ops/back_project.py              |    55 [32m+[m
+ vision3d/vision3d/ops/ball_query.py                |    42 [32m+[m
+ vision3d/vision3d/ops/contrib/__init__.py          |     0
+ vision3d/vision3d/ops/conversion.py                |    83 [32m+[m
+ vision3d/vision3d/ops/correspondences.py           |   274 [32m+[m
+ vision3d/vision3d/ops/cosine_similarity.py         |    66 [32m+[m
+ vision3d/vision3d/ops/deformation_graph.py         |   103 [32m+[m
+ vision3d/vision3d/ops/dual_softmax.py              |    25 [32m+[m
+ vision3d/vision3d/ops/eigenvector.py               |    36 [32m+[m
+ vision3d/vision3d/ops/embedded_deformation.py      |    66 [32m+[m
+ vision3d/vision3d/ops/furthest_point_sample.py     |    49 [32m+[m
+ vision3d/vision3d/ops/gather.py                    |    70 [32m+[m
+ vision3d/vision3d/ops/grid_subsample.py            |    99 [32m+[m
+ vision3d/vision3d/ops/group_gather.py              |    72 [32m+[m
+ vision3d/vision3d/ops/index_select.py              |    33 [32m+[m
+ vision3d/vision3d/ops/knn.py                       |   145 [32m+[m
+ vision3d/vision3d/ops/knn_interpolate.py           |    76 [32m+[m
+ vision3d/vision3d/ops/knn_points.py                |    41 [32m+[m
+ vision3d/vision3d/ops/local_reference_frame.py     |    51 [32m+[m
+ vision3d/vision3d/ops/masked_ops.py                |    62 [32m+[m
+ vision3d/vision3d/ops/matching.py                  |   151 [32m+[m
+ vision3d/vision3d/ops/meshgrid.py                  |    37 [32m+[m
+ vision3d/vision3d/ops/metrics.py                   |   421 [32m+[m
+ vision3d/vision3d/ops/mutual_topk_select.py        |   133 [32m+[m
+ vision3d/vision3d/ops/nearest_interpolate.py       |    20 [32m+[m
+ vision3d/vision3d/ops/nonrigid_icp_adam.py         |   131 [32m+[m
+ vision3d/vision3d/ops/normal_estimation.py         |    47 [32m+[m
+ vision3d/vision3d/ops/numeric.py                   |    14 [32m+[m
+ vision3d/vision3d/ops/pairwise_distance.py         |    58 [32m+[m
+ vision3d/vision3d/ops/point_cloud_partition.py     |   124 [32m+[m
+ vision3d/vision3d/ops/point_pair_feature.py        |    83 [32m+[m
+ vision3d/vision3d/ops/pooling.py                   |    39 [32m+[m
+ vision3d/vision3d/ops/radius_search.py             |   107 [32m+[m
+ vision3d/vision3d/ops/random_point_sample.py       |    15 [32m+[m
+ vision3d/vision3d/ops/random_sample.py             |    60 [32m+[m
+ vision3d/vision3d/ops/render.py                    |    75 [32m+[m
+ vision3d/vision3d/ops/sample_pdf.py                |    58 [32m+[m
+ vision3d/vision3d/ops/se3.py                       |   132 [32m+[m
+ vision3d/vision3d/ops/so3.py                       |   474 [32m+[m
+ vision3d/vision3d/ops/spatial_consistency.py       |    54 [32m+[m
+ vision3d/vision3d/ops/three_interpolate.py         |    66 [32m+[m
+ vision3d/vision3d/ops/three_nn.py                  |    38 [32m+[m
+ vision3d/vision3d/ops/vector_angle.py              |    35 [32m+[m
+ vision3d/vision3d/ops/volume_render.py             |    74 [32m+[m
+ vision3d/vision3d/ops/voxelize.py                  |   100 [32m+[m
+ vision3d/vision3d/ops/weighted_procrustes.py       |    71 [32m+[m
+ vision3d/vision3d/utils/__init__.py                |     0
+ vision3d/vision3d/utils/average_meter.py           |    33 [32m+[m
+ vision3d/vision3d/utils/collate.py                 |   513 [32m+[m
+ vision3d/vision3d/utils/dataloader.py              |   109 [32m+[m
+ vision3d/vision3d/utils/distributed.py             |    77 [32m+[m
+ vision3d/vision3d/utils/io.py                      |   120 [32m+[m
+ vision3d/vision3d/utils/logger.py                  |    93 [32m+[m
+ vision3d/vision3d/utils/misc.py                    |    80 [32m+[m
+ vision3d/vision3d/utils/open3d.py                  |   478 [32m+[m
+ vision3d/vision3d/utils/opencv.py                  |    63 [32m+[m
+ vision3d/vision3d/utils/optimizer.py               |   207 [32m+[m
+ vision3d/vision3d/utils/parser.py                  |    37 [32m+[m
+ vision3d/vision3d/utils/profiling.py               |    73 [32m+[m
+ vision3d/vision3d/utils/summary_board.py           |   100 [32m+[m
+ vision3d/vision3d/utils/tensor.py                  |    58 [32m+[m
+ vision3d/vision3d/utils/timer.py                   |    49 [32m+[m
+ vision3d/vision3d/utils/visualization.py           |    93 [32m+[m
+ 582 files changed, 142942 insertions(+), 1 deletion(-)
+
+[33mcommit 2cf0d533baf6b6954504f19eeb82cc85966cf805[m
+Author: mujc21 <2751631089@qq.com>
+Date:   Thu Feb 26 00:22:01 2026 +0800
+
+    first commit
+
+ README.md | 4 [32m++[m[31m--[m
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+[33mcommit 5c9f84f6b3affd6f0e4198a6dad916c36bc0caf4[m
+Author: mujc21 <2751631089@qq.com>
+Date:   Thu Feb 26 00:14:31 2026 +0800
+
+    first commit
+
+ .gitignore                                         |   3 [32m+[m
+ BPnP/.gitignore                                    | 106 [32m++++[m
+ BPnP/BPnP.py                                       | 354 [32m+++++++++++[m
+ BPnP/LICENSE                                       |  21 [32m+[m
+ BPnP/README.md                                     |  45 [32m++[m
+ BPnP/__init__.py                                   |   0
+ BPnP/demoCamCali.py                                |  79 [32m+++[m
+ BPnP/demoPoseEst.py                                | 127 [32m++++[m
+ BPnP/demoSfM.py                                    | 104 [32m+++[m
+ BPnP/demo_data/cat_mesh.mat                        | Bin [31m0[m -> [32m576[m bytes
+ BPnP/demo_data/cover.png                           | Bin [31m0[m -> [32m716290[m bytes
+ BPnP/demo_data/cube.mat                            | Bin [31m0[m -> [32m189[m bytes
+ BPnP/demo_data/driller_mesh.mat                    | Bin [31m0[m -> [32m5383[m bytes
+ BPnP/demo_data/duck_mesh.mat                       | Bin [31m0[m -> [32m11244[m bytes
+ BPnP/demo_data/poses.mat                           | Bin [31m0[m -> [32m1392[m bytes
+ BPnP/demo_data/video.png                           | Bin [31m0[m -> [32m71204[m bytes
+ BPnP/requirements.sh                               |  18 [32m+[m
+ README.md                                          | 120 [32m++++[m
+ experiments/7scenes/config.py                      | 207 [32m++++++[m
+ experiments/7scenes/dataset.py                     | 153 [32m+++++[m
+ experiments/7scenes/depth_densify.py               | 453 [32m+++++++++++++[m
+ experiments/7scenes/eval.py                        | 341 [32m++++++++++[m
+ experiments/7scenes/eval.sh                        |   2 [32m+[m
+ experiments/7scenes/fusion_module.py               | 101 [32m+++[m
+ experiments/7scenes/image_backbone.py              | 318 [32m++++++++++[m
+ experiments/7scenes/loss.py                        | 545 [32m++++++++++++++++[m
+ experiments/7scenes/model.py                       | 702 [32m++++++++++++++++++++[m
+ experiments/7scenes/point_backbone.py              |  85 [32m+++[m
+ experiments/7scenes/test.py                        | 102 [32m+++[m
+ experiments/7scenes/trainval.py                    |  66 [32m++[m
+ experiments/7scenes/utils.py                       | 242 [32m+++++++[m
+ .../__pycache__/config.cpython-312.pyc             | Bin [31m0[m -> [32m13504[m bytes
+ experiments/rgbd_scenes_v2/config.py               | 211 [32m++++++[m
+ experiments/rgbd_scenes_v2/dataset.py              | 153 [32m+++++[m
+ experiments/rgbd_scenes_v2/depth_densify.py        | 453 [32m+++++++++++++[m
+ experiments/rgbd_scenes_v2/eval.py                 | 355 [32m+++++++++++[m
+ experiments/rgbd_scenes_v2/eval.sh                 |   2 [32m+[m
+ experiments/rgbd_scenes_v2/fusion_module.py        | 101 [32m+++[m
+ experiments/rgbd_scenes_v2/image_backbone.py       | 317 [32m+++++++++[m
+ experiments/rgbd_scenes_v2/loss.py                 | 523 [32m+++++++++++++++[m
+ experiments/rgbd_scenes_v2/model.py                | 706 [32m+++++++++++++++++++++[m
+ experiments/rgbd_scenes_v2/point_backbone.py       |  85 [32m+++[m
+ experiments/rgbd_scenes_v2/test.py                 | 102 [32m+++[m
+ experiments/rgbd_scenes_v2/trainval.py             |  62 [32m++[m
+ experiments/rgbd_scenes_v2/utils.py                | 179 [32m++++++[m
+ requirements.txt                                   |  28 [32m+[m
+ vision3d                                           |   1 [32m+[m
+ 47 files changed, 7572 insertions(+)
