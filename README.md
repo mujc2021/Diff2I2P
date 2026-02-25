@@ -1,6 +1,6 @@
-# Diff$^2$I2P: Differentiable Image-to-Point Cloud Registration with Diffusion Prior
+# Diff2I2P: Differentiable Image-to-Point Cloud Registration with Diffusion Prior
 
-[ICCV 2025] [Diff$^2$I2P: Differentiable Image-to-Point Cloud Registration with Diffusion Prior](https://arxiv.org/abs/2507.06651).
+[ICCV 2025] [Diff2I2P: Differentiable Image-to-Point Cloud Registration with Diffusion Prior](https://arxiv.org/abs/2507.06651).
 
 [Juncheng Mu](https://mujc2021.github.io/), Chengwei Ren, [Weixiang Zhang](https://weixiang-zhang.github.io/), [Liang Pan](https://ethan7899.github.io/), [Xiao-ping Zhang](https://sites.google.com/view/xiaopingzhang/), and [Yue Gao](https://www.gaoyue.org/).
 
